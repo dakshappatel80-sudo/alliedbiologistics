@@ -60,7 +60,7 @@ export default function Hero() {
                 className="inline-flex items-center justify-center gap-2 border-2 border-[#0f2a3f] text-[#0f2a3f] px-8 py-4 rounded-lg font-semibold text-lg hover:bg-[#0f2a3f] hover:text-white transition-all duration-200"
               >
                 <HiPhone />
-                8849831339
+                +91 88498 31339
               </a>
             </div>
           </div>

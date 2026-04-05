@@ -70,38 +70,65 @@ export default function About() {
               </p>
             </div>
 
-            <div className="bg-[#e8f4f8] rounded-2xl p-8">
-              <div className="flex items-center gap-4 mb-4">
-                <div className="w-16 h-16 bg-[#0f2a3f] rounded-full flex items-center justify-center">
-                  <span className="text-white font-bold text-xl">PP</span>
+            <div className="grid sm:grid-cols-2 gap-4">
+              <div className="bg-[#e8f4f8] rounded-2xl p-6">
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="w-14 h-14 bg-[#0f2a3f] rounded-full flex items-center justify-center">
+                    <span className="text-white font-bold text-lg">PP</span>
+                  </div>
+                  <div>
+                    <h4 className="text-lg font-bold text-[#0f2a3f]">
+                      Prakash Patel
+                    </h4>
+                    <p className="text-[#00b4d8] font-medium text-sm">
+                      Director
+                    </p>
+                  </div>
                 </div>
-                <div>
-                  <h4 className="text-xl font-bold text-[#0f2a3f]">
-                    Daksha Patel
-                  </h4>
-                  <p className="text-[#00b4d8] font-medium">
-                    Storage Manager
-                  </p>
+                <div className="flex items-center gap-2 text-gray-600 text-sm">
+                  <span className="font-medium">Contact:</span>
+                  <a
+                    href="tel:8849831339"
+                    className="text-[#0f2a3f] font-semibold hover:text-[#00b4d8] transition-colors"
+                  >
+                    +91 88498 31339
+                  </a>
                 </div>
               </div>
-              <div className="flex items-center gap-2 text-gray-600">
-                <span className="font-medium">Contact:</span>
+
+              <div className="bg-[#e8f4f8] rounded-2xl p-6">
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="w-14 h-14 bg-[#0f2a3f] rounded-full flex items-center justify-center">
+                    <span className="text-white font-bold text-lg">DP</span>
+                  </div>
+                  <div>
+                    <h4 className="text-lg font-bold text-[#0f2a3f]">
+                      Daksha Patel
+                    </h4>
+                    <p className="text-[#00b4d8] font-medium text-sm">
+                      Director
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-center gap-2 text-gray-600 text-sm">
+                  <span className="font-medium">Contact:</span>
+                  <a
+                    href="tel:+91 96620 91210"
+                    className="text-[#0f2a3f] font-semibold hover:text-[#00b4d8] transition-colors"
+                  >
+                    +91 96620 91210
+                  </a>
+                </div>
                 <a
-                  href="tel:8849831339"
-                  className="text-[#0f2a3f] font-semibold hover:text-[#00b4d8] transition-colors"
+                  href="https://www.linkedin.com/in/daksha-patel-206a38207/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 mt-3 text-[#0077b5] font-medium hover:text-[#005582] transition-colors text-sm"
                 >
-                  8849831339
+                  <FaLinkedin size={16} />
+                  LinkedIn
                 </a>
               </div>
-              <a
-                href="https://www.linkedin.com/in/daksha-patel-206a38207/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 mt-3 text-[#0077b5] font-medium hover:text-[#005582] transition-colors"
-              >
-                <FaLinkedin size={18} />
-                View LinkedIn Profile
-              </a>
             </div>
           </div>
         </div>

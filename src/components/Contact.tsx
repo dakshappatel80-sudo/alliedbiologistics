@@ -25,7 +25,7 @@ const contactInfo = [
   {
     icon: HiPhone,
     title: "Call us",
-    content: "8849831339",
+    content: "+91 88498 31339",
     href: "tel:8849831339",
   },
   {
