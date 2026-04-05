@@ -19,7 +19,7 @@ const contactInfo = [
     icon: HiLocationMarker,
     title: "Visit us",
     content:
-      "113, Kalasagar Shopping Hub, Sattadhar Cross Rd, opp. Saibaba Temple, Ghatlodiya, Ahmedabad, Gujarat 380061",
+      "113-114, Kalasagar Shopping Hub, Sattadhar Cross Rd, opp. Saibaba Temple, Ghatlodiya, Ahmedabad, Gujarat 380061",
     href: "https://share.google/K6roa5vrU2lGKRt6q",
   },
   {
@@ -307,13 +307,19 @@ export default function Contact() {
                     type="tel"
                     id="contact-phone"
                     autoComplete="tel"
+                    maxLength={15}
+                    inputMode="numeric"
+                    pattern="[0-9+\- ]*"
                     disabled={status === "loading"}
                     className="w-full px-4 py-3.5 rounded-xl border border-gray-200 bg-[#fafcfd] text-[#0f2a3f] placeholder:text-gray-400 focus:border-[#00b4d8] focus:ring-2 focus:ring-[#00b4d8]/25 outline-none transition-all disabled:opacity-60"
                     placeholder="Optional — helps us reach you faster"
                     value={formData.phone}
-                    onChange={(e) =>
-                      setFormData({ ...formData, phone: e.target.value })
-                    }
+                    onChange={(e) => {
+                      const val = e.target.value.replace(/[^0-9+\- ]/g, "");
+                      if (val.replace(/[^0-9]/g, "").length <= 15) {
+                        setFormData({ ...formData, phone: val });
+                      }
+                    }}
                   />
                 </div>
 
@@ -350,8 +356,8 @@ export default function Contact() {
                     </>
                   ) : (
                     <>
-                      <HiPaperAirplane className="text-xl -rotate-45 translate-y-0.5" />
                       Send message
+                      <HiPaperAirplane className="text-xl rotate-90" />
                     </>
                   )}
                 </button>

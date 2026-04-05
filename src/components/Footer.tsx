@@ -71,7 +71,7 @@ export default function Footer() {
                   rel="noopener noreferrer"
                   className="text-gray-400 hover:text-[#00b4d8] transition-colors"
                 >
-                  113, Kalasagar Shopping Hub, Sattadhar Cross Rd, Ghatlodiya,
+                  113-114, Kalasagar Shopping Hub, Sattadhar Cross Rd, Ghatlodiya,
                   Ahmedabad, Gujarat 380061
                 </a>
               </li>
